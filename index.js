@@ -50,12 +50,19 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(filename, markdown) {
+
+    fs.writeFile(filename, JSON.stringify(markdown, null, '\t'), (err) =>
+      err ? console.log(err) : console.log('File created successfully.')
+    );
 }
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((data) =>{
+        const filename = `${data.title}-README.md`;
+        writeToFile(filename, generateMarkdown(data));
+    });
 }
 
 // function call to initialize program
