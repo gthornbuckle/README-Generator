@@ -51,7 +51,7 @@ ${data.test}
 
 For any questions relating to this project please contact using the following links:
 
-GitHub: ${data.username}
+GitHub: [${data.username}](https://github.com/${data.username}/)
 
 Email: ${data.email}
 `;
