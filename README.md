@@ -52,3 +52,7 @@ For any questions relating to this project please contact using the following li
 GitHub: [gthornbuckle](https://github.com/gthornbuckle/)
 
 Email: gthornbuckle@gmail.com
+
+## Video Example
+
+[README Generator Video Example](https://drive.google.com/file/d/1enujhSiEHZSsT1NKtZc9-u1QhNGA3tWO/view?usp=sharing)

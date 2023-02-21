@@ -3,7 +3,7 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// Array of questions for user
 const questions = [
     {
         type: 'input',
@@ -56,7 +56,7 @@ const questions = [
       },
 ];
 
-// function to write README file
+// Function to write README file
 function writeToFile(filename, markdown) {
 
     fs.writeFile(filename, markdown, (err) =>
@@ -64,7 +64,7 @@ function writeToFile(filename, markdown) {
     );
 }
 
-// function to initialize program
+// Function to initialize program
 function init() {
     inquirer.prompt(questions).then((data) =>{
         const filename = `${data.title}-README.md`;
@@ -72,5 +72,5 @@ function init() {
     });
 }
 
-// function call to initialize program
+// Function call to initialize program
 init();
