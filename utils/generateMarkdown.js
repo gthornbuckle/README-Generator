@@ -1,12 +1,36 @@
-// function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${getLicenseBadge(data.license)}
+${getLicenseBadge(data.license)}
 
-  ##
+## Description
+
+${data.description}
+
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+
+To install the required dependencies in order to run this project please first run the command:
+~~~
+${data.installation}
+~~~
 `;
 }
 
+// Function which gets corresponding license badge based on user input
 function getLicenseBadge(license){
   switch (license) {
     case 'Apache 2.0':

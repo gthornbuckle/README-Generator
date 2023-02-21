@@ -27,6 +27,12 @@ const questions = [
       },
       {
         type: 'input',
+        name: 'installation',
+        message: 'What command is required to install this project?',
+        default: 'npm i',
+      },
+      {
+        type: 'input',
         name: 'usage',
         message: 'What are the requirements to use this project?',
       },
