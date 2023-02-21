@@ -23,10 +23,37 @@ ${data.description}
 
 ## Installation
 
-To install the required dependencies in order to run this project please first run the command:
+To install the required dependencies in order to run this project, please first run the command:
 ~~~
 ${data.installation}
 ~~~
+
+## Usage
+
+${data.usage}
+
+## License
+
+This project is licensed under: ${data.license}
+
+## Contributing
+
+${data.contribution}
+
+## Tests
+
+To test this project, please run the command:
+~~~
+${data.test}
+~~~
+
+## Questions
+
+For any questions relating to this project please contact using the following links:
+
+GitHub: ${data.username}
+
+Email: ${data.email}
 `;
 }
 

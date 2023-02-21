@@ -41,6 +41,7 @@ const questions = [
         message: 'Which license is this project covered under?',
         name: 'license',
         choices: ['Apache 2.0', 'GNU General Public', 'MIT', 'Boost Software 1.0', 'Eclipse Public 2.0'],
+        suffix: ' (Use arrow keys to choose an option)'
       },
       {
         type: 'input',
